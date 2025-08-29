@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:bfsqualifier;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+app:
+  candidate:
+    name: "John Doe"
+    regNo: "REG12347"         # <- last two digits decide the question (odd -> q1.sql, even -> q2.sql)
+    email: "john@example.com"
+
+# External endpoints (left as constants in code too; override if needed)
+app:
+  endpoints:
+    generateWebhook: "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA"
+    fallbackSubmit:  "https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA"
