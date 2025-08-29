@@ -1,0 +1,15 @@
+git init
+git checkout -b main               # create main branch
+
+/target/
+/.idea/
+/*.iml
+*.log
+*.class
+/.mvn/
+/.settings/
+.vscode/
+*.jar
+
+git add .
+git commit -m "Initial commit - BFS Health Qualifier Java"
