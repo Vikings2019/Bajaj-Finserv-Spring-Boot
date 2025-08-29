@@ -1,0 +1,19 @@
+bfs-health-qualifier-java/
+├─ pom.xml
+├─ src/
+│  ├─ main/java/com/bfs/qualifier/
+│  │  ├─ App.java
+│  │  ├─ bootstrap/StartupRunner.java
+│  │  ├─ client/HiringClient.java
+│  │  ├─ config/CandidateProperties.java
+│  │  ├─ model/dto/GenerateWebhookRequest.java
+│  │  ├─ model/dto/GenerateWebhookResponse.java
+│  │  ├─ model/dto/FinalQueryPayload.java
+│  │  ├─ persistence/AttemptRecord.java
+│  │  ├─ persistence/AttemptRepository.java
+│  │  └─ service/SqlSolverService.java
+│  └─ main/resources/
+│     ├─ application.yml
+│     └─ sql/
+│        ├─ q1.sql   <-- put your final SQL for odd regNo
+│        └─ q2.sql   <-- put your final SQL for even regNo
